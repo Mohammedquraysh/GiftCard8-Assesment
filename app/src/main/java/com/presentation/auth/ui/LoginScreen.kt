@@ -32,7 +32,9 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.presentation.auth.viewmodel.AuthViewModel
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 
 import androidx.compose.material3.*
@@ -65,7 +67,8 @@ fun LoginScreen(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(24.dp),
+            .padding(24.dp)
+            .verticalScroll(rememberScrollState()),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -149,9 +152,6 @@ fun LoginScreen(
                 Spacer(modifier = Modifier.height(8.dp))
                 Text("Username: emilys")
                 Text("Password: emilyspass")
-                Spacer(modifier = Modifier.height(4.dp))
-                Text("Username: kminchelle")
-                Text("Password: 0lelplR")
             }
         }
     }
