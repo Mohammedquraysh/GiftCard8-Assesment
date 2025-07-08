@@ -74,3 +74,12 @@ app/src/main/java/com/todoapp/
 │   └── repository/            # Repository implementations
 ├── 🔧 di/                     # Dependency Injection
 └── 🛠️ utils/                  # Utilities & Helpers
+
+**Test Login Credentials**
+
+Use these DummyJSON test accounts:
+Username : emilys
+Password : emilyspass
+
+
+
